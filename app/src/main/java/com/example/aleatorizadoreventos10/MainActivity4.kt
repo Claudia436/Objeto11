@@ -12,7 +12,7 @@ class MainActivity4 : AppCompatActivity() {
         setContentView(R.layout.activity_main4)
 
         findViewById<ImageButton>(R.id.dado).setOnClickListener {
-            var tiradaDado = Random.nextInt(1, 5)
+            var tiradaDado = (1..4).random()
 
             when(tiradaDado) {
                 1 -> {
