@@ -44,6 +44,56 @@
             android:textColor="@color/black"
             android:textStyle="bold"/>
 
+        <LinearLayout
+            android:id="@+id/music"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/background"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                app:srcCompat="@drawable/portada1" />
+
+            <Button
+                android:id="@+id/play"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/reproducir" />
+
+            <Button
+                android:id="@+id/pausa"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/pausa" />
+
+            <Button
+                android:id="@+id/repetir"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/repetir" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/barra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:saveEnabled="false"
+            android:layout_margin="5dp"/>
+
 
     </LinearLayout>
 
