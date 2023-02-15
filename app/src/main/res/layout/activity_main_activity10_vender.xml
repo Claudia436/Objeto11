@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity9Comprar">
+    tools:context=".MainActivity10Vender">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,14 +13,14 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/objetos"
+            android:id="@+id/bolsa"
             android:layout_width="wrap_content"
             android:layout_height="250dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:layout_marginRight="7dp"
             android:layout_marginLeft="7dp"
-            app:srcCompat="@drawable/objetos"
+            app:srcCompat="@drawable/mochila"
             tools:ignore="MissingConstraints"/>
 
         <LinearLayout
@@ -33,18 +33,11 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="vertical">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Precio cada objeto: 125"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:textSize="17dp"/>
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Cantidad a comprar"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Cantidad objetos vender"/>
             </LinearLayout>
 
             <Button android:id="@+id/aceptar"

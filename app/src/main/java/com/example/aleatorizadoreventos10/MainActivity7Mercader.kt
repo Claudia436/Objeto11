@@ -12,12 +12,24 @@ class MainActivity7Mercader : AppCompatActivity() {
         setContentView(R.layout.activity_main_activity7_mercader)
 
         findViewById<Button>(R.id.comerciar).setOnClickListener(){
-            findViewById<Button>(R.id.comprar).visibility = View.GONE
-            findViewById<Button>(R.id.vender).visibility = View.GONE
-            findViewById<Button>(R.id.cancelar).visibility = View.GONE
+            findViewById<Button>(R.id.comprar).visibility = View.VISIBLE
+            findViewById<Button>(R.id.vender).visibility = View.VISIBLE
+            findViewById<Button>(R.id.cancelar).visibility = View.VISIBLE
+
+            findViewById<Button>(R.id.comerciar).visibility = View.GONE
+            findViewById<Button>(R.id.continuarM).visibility = View.GONE
         }
         findViewById<Button>(R.id.continuarM).setOnClickListener(){
             startActivity(Intent(this,MainActivity4 :: class.java))
+        }
+        findViewById<Button>(R.id.comprar).setOnClickListener(){
+            startActivity(Intent(this,MainActivity9Comprar :: class.java))
+        }
+        findViewById<Button>(R.id.vender).setOnClickListener(){
+            startActivity(Intent(this,MainActivity10Vender :: class.java))
+        }
+        findViewById<Button>(R.id.cancelar).setOnClickListener(){
+            startActivity(Intent(this,MainActivity7Mercader :: class.java))
         }
     }
 }
