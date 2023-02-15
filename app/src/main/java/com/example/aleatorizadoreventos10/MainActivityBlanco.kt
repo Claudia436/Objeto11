@@ -3,9 +3,9 @@ package com.example.aleatorizadoreventos10
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class MainActivity9 : AppCompatActivity() {
+class MainActivityBlanco : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main9)
+        setContentView(R.layout.activity_main_blanco)
     }
 }

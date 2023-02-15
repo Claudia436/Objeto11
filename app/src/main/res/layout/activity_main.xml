@@ -20,8 +20,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginLeft="7dp"
             app:srcCompat="@drawable/inicio"
-            tools:ignore="MissingConstraints">
-        </ImageView>
+            tools:ignore="MissingConstraints"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,8 +36,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="20dp"
-                tools:ignore="MissingConstraints">
-            </Button>
+                tools:ignore="MissingConstraints"/>
 
             <Button
                 android:id="@+id/button2"
@@ -47,8 +45,7 @@
                 android:text="Ladrona"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="30dp"
-                tools:ignore="MissingConstraints">
-            </Button>
+                tools:ignore="MissingConstraints"/>
         </LinearLayout>
 
         <LinearLayout
@@ -65,8 +62,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="20dp"
-                tools:ignore="MissingConstraints">
-            </Button>
+                tools:ignore="MissingConstraints"/>
 
             <Button
                 android:id="@+id/button4"
@@ -75,8 +71,7 @@
                 android:text="Berserker"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="30dp"
-                tools:ignore="MissingConstraints">
-            </Button>
+                tools:ignore="MissingConstraints"/>
         </LinearLayout>
 
         <Button
@@ -86,8 +81,6 @@
             android:text="Aceptar"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="110dp"
-            tools:ignore="MissingConstraints">
-        </Button>
+            tools:ignore="MissingConstraints"/>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

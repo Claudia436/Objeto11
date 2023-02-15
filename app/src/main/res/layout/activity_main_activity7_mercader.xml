@@ -21,8 +21,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginLeft="7dp"
             app:srcCompat="@drawable/mercader"
-            tools:ignore="MissingConstraints">
-        </ImageView>
+            tools:ignore="MissingConstraints"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,16 +32,40 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="COMERCIAR"
-                android:layout_marginRight="10dp">
-            </Button>
+                android:layout_marginRight="10dp"/>
 
             <Button android:id="@+id/continuarM"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="CONTINUAR"
-                android:layout_marginLeft="10dp">
-            </Button>
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button android:id="@+id/comprar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMPRAR"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"/>
+
+            <Button android:id="@+id/vender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VENDER"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"/>
+
+            <Button android:id="@+id/cancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANCELAR"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"/>
         </LinearLayout>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

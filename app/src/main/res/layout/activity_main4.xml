@@ -20,8 +20,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginLeft="7dp"
             app:srcCompat="@drawable/paisaje"
-            tools:ignore="MissingConstraints">
-        </ImageView>
+            tools:ignore="MissingConstraints"/>
 
         <ImageButton
             android:id="@+id/dado"
@@ -30,8 +29,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:scaleType="fitXY"
-            android:src="@drawable/dado">
-        </ImageButton>
+            android:src="@drawable/dado"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -60,7 +58,7 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="50dp"
-                app:srcCompat="@drawable/portada1" />
+                app:srcCompat="@drawable/portada1"/>
 
             <Button
                 android:id="@+id/play"
@@ -68,14 +66,14 @@
                 android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
-                android:background="@drawable/reproducir" />
+                android:background="@drawable/reproducir"/>
 
             <Button
                 android:id="@+id/pausa"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center"
-                android:background="@drawable/pausa" />
+                android:background="@drawable/pausa"/>
 
             <Button
                 android:id="@+id/repetir"
@@ -83,7 +81,7 @@
                 android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
-                android:background="@drawable/repetir" />
+                android:background="@drawable/repetir"/>
 
         </LinearLayout>
 
@@ -93,8 +91,5 @@
             android:layout_height="wrap_content"
             android:saveEnabled="false"
             android:layout_margin="5dp"/>
-
-
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

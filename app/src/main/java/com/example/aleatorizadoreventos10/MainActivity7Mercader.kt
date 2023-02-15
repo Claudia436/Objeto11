@@ -3,6 +3,7 @@ package com.example.aleatorizadoreventos10
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 
 class MainActivity7Mercader : AppCompatActivity() {
@@ -11,7 +12,9 @@ class MainActivity7Mercader : AppCompatActivity() {
         setContentView(R.layout.activity_main_activity7_mercader)
 
         findViewById<Button>(R.id.comerciar).setOnClickListener(){
-            startActivity(Intent(this,MainActivity9 :: class.java))
+            findViewById<Button>(R.id.comprar).visibility = View.GONE
+            findViewById<Button>(R.id.vender).visibility = View.GONE
+            findViewById<Button>(R.id.cancelar).visibility = View.GONE
         }
         findViewById<Button>(R.id.continuarM).setOnClickListener(){
             startActivity(Intent(this,MainActivity4 :: class.java))

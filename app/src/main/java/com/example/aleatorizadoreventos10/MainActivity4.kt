@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.SeekBar
 import android.widget.Toast
 import kotlin.random.Random
 
@@ -61,10 +62,10 @@ class MainActivity4 : AppCompatActivity() {
     }
     //MIRAR PQ ESA MIERDA NO VA
     private fun initializeSeekBar() {
-        barra.max = mp.seconds
+        findViewById<SeekBar>(R.id.barra).max = mp.seconds
 
         runnable = Runnable {
-            barra.progress = mp.currentSeconds
+            findViewById<SeekBar>(R.id.barra).progress = mp.currentSeconds
             handler.postDelayed(runnable, 1000)
         }
         handler.postDelayed(runnable, 1000)

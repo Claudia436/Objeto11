@@ -11,7 +11,7 @@ class MainActivity8Enemigo : AppCompatActivity() {
         setContentView(R.layout.activity_main_activity8_enemigo)
 
         findViewById<Button>(R.id.luchar).setOnClickListener(){
-            startActivity(Intent(this,MainActivity9 :: class.java))
+            startActivity(Intent(this,MainActivityBlanco :: class.java))
         }
         findViewById<Button>(R.id.huir).setOnClickListener(){
             startActivity(Intent(this,MainActivity4 :: class.java))
