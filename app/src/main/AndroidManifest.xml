@@ -12,6 +12,9 @@
         android:theme="@style/Theme.AleatorizadorEventos10"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity0Login"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity10Vender"
             android:exported="false" />
         <activity

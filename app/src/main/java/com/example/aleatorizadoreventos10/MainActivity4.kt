@@ -27,40 +27,57 @@ class MainActivity4 : AppCompatActivity() {
         findViewById<ImageButton>(R.id.dado).setOnClickListener {
             var tiradaDado = (1..4).random()
 
-            when(tiradaDado) {
+            when (tiradaDado) {
                 1 -> {
-                    var intent1 = Intent(this,MainActivity5Objeto :: class.java)
+                    var intent1 = Intent(this, MainActivity5Objeto::class.java)
                     startActivity(intent1)
                 }
                 2 -> {
-                    var intent2 = Intent(this,MainActivity6Ciudad :: class.java)
+                    var intent2 = Intent(this, MainActivity6Ciudad::class.java)
                     startActivity(intent2)
                 }
                 3 -> {
-                    var intent3 = Intent(this,MainActivity7Mercader :: class.java)
+                    var intent3 = Intent(this, MainActivity7Mercader::class.java)
                     startActivity(intent3)
                 }
                 4 -> {
-                    var intent4 = Intent(this,MainActivity8Enemigo :: class.java)
+                    var intent4 = Intent(this, MainActivity8Enemigo::class.java)
                     startActivity(intent4)
                 }
             }
         }
 
-        findViewById<Button>(R.id.play).setOnClickListener{
-            if(pause){
+        findViewById<Button>(R.id.play).setOnClickListener {
+            if (pause) {
                 mp.seekTo(mp.currentPosition)
                 mp.start()
-                Toast.makeText(this,"MediaPlayer",Toast.LENGTH_SHORT).show()
-            }else{
-                mp = MediaPlayer.create(applicationContext,R.raw.epicmusic)
+                Toast.makeText(this, "MediaPlayer", Toast.LENGTH_SHORT).show()
+            } else {
+                mp = MediaPlayer.create(applicationContext, R.raw.epicmusic)
                 mp.start()
-                Toast.makeText(this,"MediaPlayer",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "MediaPlayer", Toast.LENGTH_SHORT).show()
             }
+            initializeSeekBar()
+
+            mp.setOnCompletionListener {
+                Toast.makeText(this, "end", Toast.LENGTH_SHORT).show()
+            }
+        }
+        findViewById<Button>(R.id.pausa).setOnClickListener {
+            if (mp.isPlaying) {
+                mp.pause()
+                pause = true
+                Toast.makeText(this, "pause", Toast.LENGTH_SHORT).show()
+            }
+        }
+        findViewById<Button>(R.id.repetir).setOnClickListener {
+            mp = MediaPlayer.create(applicationContext, R.raw.epicmusic)
+            mp.start()
+            Toast.makeText(this, "MediaPlayer", Toast.LENGTH_SHORT).show()
             initializeSeekBar()
         }
     }
-    //MIRAR PQ ESA MIERDA NO VA
+
     private fun initializeSeekBar() {
         findViewById<SeekBar>(R.id.barra).max = mp.seconds
 
