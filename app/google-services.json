@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "870001175413",
+    "project_id": "aleatorizadoreventos10-9dc94",
+    "storage_bucket": "aleatorizadoreventos10-9dc94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870001175413:android:de678cc5babd2120c8013c",
+        "android_client_info": {
+          "package_name": "com.example.aleatorizadoreventos10"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870001175413-sse1imn6ge7br5nbkso04irlnpv4nfuo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgzlZGpp6TGem0Ix-V7bU2QREVR8OdJ1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870001175413-sse1imn6ge7br5nbkso04irlnpv4nfuo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

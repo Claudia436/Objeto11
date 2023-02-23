@@ -4,18 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity0Login">
-
+    tools:context=".MainActivityRegristro">
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_margin="15dp">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Registro"
             android:textSize="60dp"
             android:layout_marginTop="60dp"
             android:layout_marginLeft="25dp"
@@ -23,8 +22,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ingrese tú user y contraseña"
-            android:textSize="20dp"
+            android:text="Rellena los campos para crear una cuenta"
+            android:textSize="18dp"
             android:layout_marginTop="8dp"
             android:layout_marginLeft="25dp"/>
 
@@ -33,7 +32,6 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="Correo electrónico"
-            android:inputType="textEmailAddress"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
             android:layout_marginTop="50dp"
@@ -50,36 +48,17 @@
             android:textSize="16dp"
             android:inputType="textPassword"/>
 
-        <LinearLayout
+        <Button
+            android:id="@+id/registrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/login"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:text="Iniciar Sesión"
-                android:onClick="login"
-                android:backgroundTint="#009688"/>
-
-            <TextView
-                android:id="@+id/registro"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="¿No tienes una cuenta?"
-                android:textSize="16dp"
-                android:onClick="register"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"/>
-
-
-
-        </LinearLayout>
-
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="Registrar"
+            android:onClick="register"
+            android:backgroundTint="#009688"/>
+        
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
