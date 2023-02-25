@@ -11,7 +11,7 @@ class MainActivity6Ciudad : AppCompatActivity() {
         setContentView(R.layout.activity_main_activity6_ciudad)
 
         findViewById<Button>(R.id.entrar).setOnClickListener(){
-            startActivity(Intent(this,MainActivityBlanco :: class.java))
+            startActivity(Intent(this,MainActivity12Complice :: class.java))
         }
         findViewById<Button>(R.id.continuarC).setOnClickListener(){
             startActivity(Intent(this,MainActivity4 :: class.java))
