@@ -42,9 +42,11 @@
                 android:textSize="17dp"/>
 
             <EditText
+                android:id="@+id/cantidad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Cantidad a comprar"/>
+                android:hint="Cantidad a comprar"
+                android:inputType="number"/>
             </LinearLayout>
 
             <Button android:id="@+id/aceptar"

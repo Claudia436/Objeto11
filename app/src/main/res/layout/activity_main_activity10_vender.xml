@@ -35,12 +35,14 @@
                 android:orientation="vertical">
 
                 <EditText
+                    android:id="@+id/vender"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Cantidad objetos vender"/>
+                    android:hint="Cantidad objetos vender"
+                    android:inputType="number"/>
             </LinearLayout>
 
-            <Button android:id="@+id/aceptar"
+            <Button android:id="@+id/aceptarVenta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ACEPTAR"

@@ -37,7 +37,7 @@ class MainActivity4 : AppCompatActivity() {
                     startActivity(intent2)
                 }
                 3 -> {
-                    var intent3 = Intent(this, MainActivity7Mercader::class.java)
+                    var intent3 = Intent(this,MainActivity7Mercader :: class.java)
                     startActivity(intent3)
                 }
                 4 -> {
@@ -76,6 +76,7 @@ class MainActivity4 : AppCompatActivity() {
             Toast.makeText(this, "MediaPlayer", Toast.LENGTH_SHORT).show()
             initializeSeekBar()
         }
+
     }
 
     private fun initializeSeekBar() {

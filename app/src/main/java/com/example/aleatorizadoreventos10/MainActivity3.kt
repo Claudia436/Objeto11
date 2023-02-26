@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.aleatorizadoreventos10.Personaje
 
 class MainActivity3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,12 +49,14 @@ class MainActivity3 : AppCompatActivity() {
         findViewById<TextView>(R.id.numM).apply {
             text = 0.toString()
         }
+        val mochila = Mochila(100)
 
         findViewById<Button>(R.id.volver).setOnClickListener(){
             startActivity(Intent(this,MainActivity :: class.java))
         }
         findViewById<Button>(R.id.comenzar).setOnClickListener(){
-            startActivity(Intent(this,MainActivity4 :: class.java))
+            var intent = Intent(this,MainActivity4 :: class.java)
+            startActivity(intent)
         }
     }
 }

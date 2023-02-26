@@ -23,7 +23,8 @@ class MainActivity7Mercader : AppCompatActivity() {
             startActivity(Intent(this,MainActivity4 :: class.java))
         }
         findViewById<Button>(R.id.comprar).setOnClickListener(){
-            startActivity(Intent(this,MainActivity9Comprar :: class.java))
+            var intent = Intent(this,MainActivity9Comprar :: class.java)
+            startActivity(intent)
         }
         findViewById<Button>(R.id.vender).setOnClickListener(){
             startActivity(Intent(this,MainActivity10Vender :: class.java))
